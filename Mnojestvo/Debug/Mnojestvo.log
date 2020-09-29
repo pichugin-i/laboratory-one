@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\pichu\source\repos\Mnojestvo\Mnojestvo\main.cpp(7,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Mnojestvo.vcxproj -> C:\Users\pichu\source\repos\Mnojestvo\Debug\Mnojestvo.exe

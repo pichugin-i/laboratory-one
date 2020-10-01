@@ -1,7 +1,7 @@
 #include "bitfield.h"
 
 TBitField::TBitField(int len) :BitLen(len) {
-  MemLen = (len + 15) >> 4;// Сдвигаем на 4 бита вправо.
+  MemLen = (len+31)/32;
   pMem = new TELEM[MemLen];
   if (pMem != NULL) {
     for (int i = 0; i < MemLen; i++) {
@@ -27,7 +27,7 @@ TBitField :: ~TBitField() {
 }
 
 int TBitField::GetMemIndex(const int n) const {
-  return n >> 4;
+  return n >> 5;
 }
 
 TELEM TBitField::GetMemMask(const int n) const {

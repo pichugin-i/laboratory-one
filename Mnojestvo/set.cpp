@@ -54,7 +54,7 @@ istream& operator>>(istream& istr, TSet& s) { // Ввод. Организация визуализации 
   int temp;
   char ch;
   do { 
-    istr>> ch; 
+    istr >> ch; 
   } while (ch != '{');
   do {
     istr >> temp; s.InsElem(temp);
